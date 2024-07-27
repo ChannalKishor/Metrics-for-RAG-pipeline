@@ -20,7 +20,7 @@ openai_api_key = os.getenv('OPENAI_API_KEY')
 pc = PineconeClient(api_key=pinecone_api_key)
 
 # Define index name and check if it exists
-index_name = "travel-destination-index"
+index_name = "foud-nutrition-system-index"
 if index_name not in pc.list_indexes().names():
     pc.create_index(
         name=index_name,
